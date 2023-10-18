@@ -1,0 +1,950 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+body {
+  background-color: #0c0324;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  object-fit: cover;
+}
+
+i {
+  font-family: "FontAwesome";
+  vertical-align: middle;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.w-2 {
+  width: 50%;
+}
+
+.w-3 {
+  width: 33.33%;
+}
+
+.w-4 {
+  width: 25%;
+}
+
+.w-5 {
+  width: 20%;
+}
+
+.w-20 {
+  width: 20%;
+}
+
+.w-30 {
+  width: 30%;
+}
+
+.w-70 {
+  width: 70%;
+}
+
+.w-40 {
+  width: 40%;
+}
+
+.w-60 {
+  width: 60%;
+}
+
+header {
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+header .logo {
+  width: 150px;
+}
+header .toggle-menu {
+  background-color: #4E10FF;
+  padding: 8px 10px;
+  border-radius: 3px;
+  display: none;
+}
+header .toggle-menu a {
+  color: #ffffff;
+  font-size: 18px;
+}
+header nav ul li {
+  margin-left: 25px;
+  font-family: "Rajdhani";
+  position: relative;
+}
+header nav ul li a {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 16px;
+}
+header nav ul li a i {
+  font-size: 12px;
+  margin-left: 10px;
+  vertical-align: center;
+}
+header nav ul li:first-child a {
+  color: #AB17DF;
+  position: relative;
+}
+header nav ul li:first-child a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #AB17DF;
+}
+header .header-btn {
+  background: linear-gradient(90deg, #4E10FF, #AB17DF);
+  color: #ffffff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 18px;
+  font-family: "Rajdhani";
+}
+header .header-btn i {
+  margin-left: 10px;
+}
+
+.banner {
+  padding: 200px 0;
+  position: relative;
+  background: url(../img/banner-1.png) rgba(12, 3, 36, 0.7);
+  background-blend-mode: color-burn;
+  z-index: -1;
+  background-size: cover;
+}
+.banner .banner-content {
+  padding-right: 50px;
+}
+.banner .banner-content h1 {
+  color: #ffffff;
+  font-family: "Rajdhani";
+  font-size: 70px;
+  line-height: 70px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  position: relative;
+}
+.banner .banner-content h1::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 150px;
+  z-index: -1;
+  width: 120px;
+  height: 30px;
+  background-color: #fead10;
+}
+.banner .banner-content p {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: "Nunito";
+}
+.banner .banner-content .banner-btn {
+  margin-top: 35px;
+}
+.banner .banner-content .banner-btn a {
+  font-size: 15px;
+  font-family: "Rajdhani";
+  border-radius: 5px;
+  font-weight: 600;
+  padding: 15px 25px;
+}
+.banner .banner-content .banner-btn a:first-child {
+  background: linear-gradient(90deg, #4E10FF, #AB17DF);
+  color: #ffffff;
+}
+.banner .banner-content .banner-btn a:first-child i {
+  margin-left: 10px;
+}
+.banner .banner-content .banner-btn a:last-child {
+  color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  margin-left: 25px;
+}
+.banner .valuation .valuation-items ul {
+  margin-top: 50px;
+}
+.banner .valuation .valuation-items ul li {
+  font-family: "Rajdhani";
+  padding-right: 130px;
+}
+.banner .valuation .valuation-items ul li:nth-child(2), .banner .valuation .valuation-items ul li:last-child {
+  position: relative;
+}
+.banner .valuation .valuation-items ul li:nth-child(2)::after, .banner .valuation .valuation-items ul li:last-child::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -30%;
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 1px;
+  height: 100%;
+  transform: translateX(50%);
+}
+.banner .valuation .valuation-items ul li h2 {
+  font-weight: 600;
+  font-size: 45px;
+  color: #ffffff;
+  line-height: 45px;
+}
+.banner .valuation .valuation-items ul li h6 {
+  font-size: 15px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.6);
+}
+.banner .banner-img {
+  position: relative;
+}
+.banner .banner-img::after {
+  content: "";
+  position: absolute;
+  width: 70%;
+  height: 100%;
+  top: 20px;
+  left: 20%;
+  z-index: -1;
+  border: 2px solid;
+  border-image: linear-gradient(90deg, #4E10FF, #AB17DF) 1;
+}
+.banner .banner-img img {
+  width: 400px;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.our-partner {
+  padding: 30px 0;
+}
+.our-partner .partner-title {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.our-partner .partner-title h4 {
+  font-family: "Rajdhani";
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #ffffff;
+}
+.our-partner .partner-img {
+  margin-top: 30px;
+}
+.our-partner .partner-img img {
+  opacity: 0.3;
+  margin: 0 auto;
+}
+
+.our-story {
+  padding: 100px 0 30px 0;
+}
+.our-story .row {
+  align-items: center;
+}
+.our-story .row .story-img {
+  position: relative;
+  width: 100%;
+}
+.our-story .row .story-img img {
+  border-radius: 10px;
+}
+.our-story .row .story-img .img-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 32px;
+}
+.our-story .row .story-img .img-title h2 {
+  background-color: rgba(12, 3, 36, 0.5019607843);
+  border-radius: 10px;
+  padding: 20px 125px 20px 20px;
+  font-size: 24px;
+  font-family: "Rajdhani";
+  font-weight: 600;
+  color: #ffffff;
+}
+.our-story .row .story-content h4 {
+  color: #fead10;
+  font-family: "Rajdhani";
+}
+.our-story .row .story-content h2 {
+  color: #ffffff;
+  font-family: "Rajdhani";
+  font-weight: 600;
+  font-size: 70px;
+}
+.our-story .row .story-content p {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: "Nunito";
+  margin-bottom: 20px;
+  font-size: 17px;
+}
+.our-story .row .story-content a {
+  background: linear-gradient(90deg, #4E10FF, #AB17DF);
+  color: #ffffff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 18px;
+  font-family: "Rajdhani";
+}
+.our-story .row .story-content a i {
+  margin-left: 10px;
+}
+
+.collection {
+  background: url(../img/bg-boxstar.png) rgba(12, 3, 36, 0.4);
+  background-blend-mode: color;
+  background-repeat: no-repeat;
+  padding: 100px 0 40px 0;
+}
+.collection .collection-title h4 {
+  color: #fead10;
+  font-family: "Rajdhani";
+}
+.collection .collection-title h2 {
+  color: #ffffff;
+  font-family: "Rajdhani";
+  font-weight: 600;
+  font-size: 70px;
+}
+.collection .collection-title p {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 17px;
+  font-family: "Nunito";
+  width: 600px;
+  margin: 0 auto;
+}
+.collection .collection-inner {
+  padding: 50px 0;
+}
+.collection .collection-inner .collection-items {
+  background-color: rgba(255, 255, 255, 0.0705882353);
+  padding: 10px;
+  border-radius: 10px;
+  margin: 0 15px;
+}
+.collection .collection-inner .collection-items img {
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.collection .collection-inner .collection-items h4 {
+  background-color: rgba(12, 3, 36, 0.5019607843);
+  color: #ffffff;
+  font-family: "Rajdhani";
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px 0;
+}
+.collection .collection-btn a {
+  background: linear-gradient(90deg, #4E10FF, #AB17DF);
+  color: #ffffff;
+  padding: 13px 18px;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 18px;
+  font-family: "Rajdhani";
+}
+.collection .collection-btn a i {
+  margin-left: 10px;
+}
+
+.roadmap {
+  background: url(../img/bg-boxstar.png) rgba(12, 3, 36, 0.4);
+  background-blend-mode: color;
+  background-position: right;
+  background-repeat: no-repeat;
+  padding: 40px 0;
+  position: relative;
+}
+.roadmap::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(../img/dots.png);
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.5;
+}
+.roadmap .w-2 {
+  display: flex;
+  align-items: end;
+}
+.roadmap .w-2 .roadmap-title h4 {
+  color: #fead10;
+  font-family: "Rajdhani";
+}
+.roadmap .w-2 .roadmap-title h2 {
+  color: #ffffff;
+  font-family: "Rajdhani";
+  font-weight: 600;
+  font-size: 70px;
+}
+.roadmap .w-2 .roadmap-title p {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 17px;
+  font-family: "Nunito";
+}
+.roadmap .roadmap-inner {
+  padding: 40px 0;
+}
+.roadmap .roadmap-inner .roadmap-items {
+  background-image: url(../img/elipse-4.png);
+  background-position: center;
+}
+.roadmap .roadmap-inner .roadmap-items .roadmap-content {
+  background-color: rgba(255, 255, 255, 0.0705882353);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 0 30px 30px 0;
+}
+.roadmap .roadmap-inner .roadmap-items ul li {
+  margin-right: 30px;
+  font-family: "Rajdhani";
+}
+.roadmap .roadmap-inner .roadmap-items ul li:first-child h3 {
+  color: #fead10;
+  position: relative;
+}
+.roadmap .roadmap-inner .roadmap-items ul li:first-child h3::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -100%;
+  width: 2px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.roadmap .roadmap-inner .roadmap-items ul li h3 {
+  color: #ffffff;
+}
+.roadmap .roadmap-inner .roadmap-items p {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: "Nunito";
+  font-size: 17px;
+  padding-top: 25px;
+}
+.roadmap .roadmap-inner .roadmap-img img {
+  border-radius: 10px;
+}
+
+.accordion {
+  padding: 40px 0;
+}
+.accordion .accordion-title {
+  padding: 0 15px;
+}
+.accordion .accordion-title h4 {
+  color: #fead10;
+  font-family: "Rajdhani";
+  padding-bottom: 7px;
+}
+.accordion .accordion-title h2 {
+  color: #ffffff;
+  font-family: "Rajdhani";
+  font-weight: 600;
+  font-size: 70px;
+  line-height: 70px;
+}
+.accordion .accordion-title p {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 17px;
+  font-family: "Nunito";
+  padding-top: 30px;
+}
+.accordion .faq .accordion-items {
+  margin-bottom: 15px;
+}
+.accordion .faq .accordion-items h2 {
+  padding-bottom: 15px;
+  color: #ffffff;
+  font-family: "Rajdhani";
+  cursor: pointer;
+}
+.accordion .faq .accordion-items i {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 15px;
+}
+.accordion .faq .accordion-items .rotate {
+  transform: rotate(180deg);
+}
+.accordion .faq .accordion-content {
+  display: none;
+}
+.accordion .faq .accordion-content p {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: "Nunito";
+}
+
+.our-team {
+  padding: 40px 0;
+  position: relative;
+}
+.our-team::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: 0;
+  background-image: url(../img/faq.png);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+.our-team::before {
+  content: "";
+  position: absolute;
+  top: 10%;
+  left: 0;
+  background-image: url(../img/elipse-top-left.png);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 25%;
+  z-index: -1;
+}
+.our-team .team-title h4 {
+  color: #fead10;
+  font-family: "Rajdhani";
+}
+.our-team .team-title h2 {
+  color: #ffffff;
+  font-family: "Rajdhani";
+  font-weight: 600;
+  font-size: 70px;
+}
+.our-team .team-title p {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 17px;
+  font-family: "Nunito";
+  width: 600px;
+  margin: 0 auto;
+}
+.our-team .team-inner {
+  padding: 50px 0;
+}
+.our-team .team-inner .team-items {
+  background-color: rgba(255, 255, 255, 0.0705882353);
+  padding: 10px;
+  border-radius: 10px;
+  margin: 0 15px;
+}
+.our-team .team-inner .team-items .team-img img {
+  border-radius: 10px;
+}
+.our-team .team-inner .team-items .team-content {
+  background-color: rgba(12, 3, 36, 0.5019607843);
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.our-team .team-inner .team-items .team-content h4 {
+  color: #ffffff;
+  font-family: "Rajdhani";
+  font-size: 17px;
+  font-weight: 600;
+}
+.our-team .team-inner .team-items .team-content p {
+  font-family: "Nunito";
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  padding: 5px 0;
+}
+.our-team .team-inner .team-items .team-content a i {
+  background-color: #AB17DF;
+  color: #ffffff;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.testimonial {
+  padding: 40px 0;
+  background-image: url(../img/testi.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center right;
+  position: relative;
+}
+.testimonial::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  right: 0;
+  background-image: url(../img/elipse-bottom-right.png);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 25% auto;
+  background-position: right;
+}
+.testimonial .testimonial-title h4 {
+  color: #fead10;
+  font-family: "Rajdhani";
+}
+.testimonial .testimonial-title h2 {
+  color: #ffffff;
+  font-family: "Rajdhani";
+  font-weight: 600;
+  font-size: 70px;
+  line-height: 70px;
+  padding: 10px 0;
+}
+.testimonial .testimonial-title p {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 17px;
+  font-family: "Nunito";
+}
+.testimonial .testimonial-title ul {
+  margin: 30px 0;
+}
+.testimonial .testimonial-title ul li {
+  padding: 0 30px 0 0;
+}
+.testimonial .testimonial-title ul li img {
+  border-radius: 10px;
+}
+.testimonial .testimonial-title a {
+  background: linear-gradient(90deg, #4E10FF, #AB17DF);
+  color: #ffffff;
+  padding: 13px 18px;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 18px;
+  font-family: "Rajdhani";
+}
+.testimonial .testimonial-title a i {
+  margin-left: 10px;
+}
+.testimonial .testimonial-content {
+  background-color: rgba(255, 255, 255, 0.0705882353);
+  border-radius: 10px;
+  padding: 50px;
+  margin: 30px 0 0 40px;
+}
+.testimonial .testimonial-content img {
+  margin: 0 auto;
+}
+.testimonial .testimonial-content h2 {
+  color: #ffffff;
+  font-family: "Rajdhani";
+  font-size: 40px;
+  padding: 20px 0;
+}
+.testimonial .testimonial-content h3 {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: "Nunito";
+  font-weight: 400;
+  line-height: 35px;
+  font-size: 22px;
+  padding-bottom: 20px;
+}
+.testimonial .testimonial-content h4 {
+  color: #ffffff;
+  font-family: "Rajdhani";
+  font-size: 17px;
+  font-weight: 600;
+  padding-top: 10px;
+}
+.testimonial .testimonial-content p {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: "Nunito";
+  font-size: 13px;
+}
+.testimonial .testimonial-content img {
+  border-radius: 10px;
+}
+
+.merchandise {
+  background: url(../img/bg-boxstar.png) rgba(12, 3, 36, 0.4);
+  background-repeat: no-repeat;
+  padding: 60px 0;
+}
+.merchandise .merchandise-title h4 {
+  color: #fead10;
+  font-family: "Rajdhani";
+}
+.merchandise .merchandise-title h2 {
+  color: #ffffff;
+  font-family: "Rajdhani";
+  font-weight: 600;
+  font-size: 70px;
+}
+.merchandise .merchandise-title p {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 17px;
+  font-family: "Nunito";
+  width: 600px;
+  margin: 0 auto;
+}
+.merchandise .merchandise-inner {
+  padding: 50px 0;
+}
+.merchandise .merchandise-inner .merchandise-items {
+  font-family: "Rajdhani";
+  background-color: rgba(255, 255, 255, 0.0705882353);
+  padding: 15px 10px;
+  border-radius: 10px;
+  margin: 0 15px;
+}
+.merchandise .merchandise-inner .merchandise-items h3 {
+  color: #ffffff;
+  padding: 10px 0;
+}
+.merchandise .merchandise-inner .merchandise-items ul {
+  justify-content: center;
+}
+.merchandise .merchandise-inner .merchandise-items ul li a {
+  color: #fead10;
+  background-color: transparent;
+}
+.merchandise .merchandise-inner .merchandise-items h4 {
+  color: rgba(255, 255, 255, 0.6);
+  padding-top: 7px;
+}
+.merchandise .merchandise-inner .merchandise-items .merchandise-btn a {
+  color: #ffffff;
+  background-color: #AB17DF;
+  font-size: 18px;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+.blog {
+  padding: 40px 0;
+}
+.blog .blog-title {
+  padding: 40px 0;
+}
+.blog .blog-title h4 {
+  color: #fead10;
+  font-family: "Rajdhani";
+}
+.blog .blog-title h2 {
+  color: #ffffff;
+  font-family: "Rajdhani";
+  font-weight: 600;
+  font-size: 70px;
+}
+.blog .blog-title p {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 17px;
+  font-family: "Nunito";
+  width: 600px;
+  margin: 0 auto;
+}
+.blog .blog-inner .blog-items {
+  background-color: rgba(255, 255, 255, 0.0705882353);
+  border-radius: 10px;
+  margin: 0 15px;
+}
+.blog .blog-inner .blog-items img {
+  border-radius: 10px;
+}
+.blog .blog-inner .blog-items .blog-content {
+  padding: 10px;
+}
+.blog .blog-inner .blog-items .blog-content h3 {
+  color: #ffffff;
+  padding: 7px 0;
+  font-family: "Rajdhani";
+  font-weight: 600;
+}
+.blog .blog-inner .blog-items .blog-content p {
+  font-family: "Nunito";
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+}
+.blog .blog-inner .blog-items .blog-content a {
+  color: #AB17DF;
+  font-family: "Rajdhani";
+  font-size: 18px;
+  font-weight: 600;
+  padding-top: 8px;
+}
+
+.newsletter {
+  padding-top: 80px;
+}
+.newsletter .newsletter-inner {
+  background: url(../img/dots.png);
+  position: relative;
+  padding: 80px;
+}
+.newsletter .newsletter-inner::after {
+  content: "";
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(90deg, #4E10FF, #AB17DF);
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.newsletter .newsletter-inner .newsletter-items-1 h4 {
+  font-family: "Rajdhani";
+  color: #fead10;
+}
+.newsletter .newsletter-inner .newsletter-items-1 h2 {
+  font-family: "Rajdhani";
+  color: #ffffff;
+  font-size: 35px;
+  padding: 10px 0;
+}
+.newsletter .newsletter-inner .newsletter-items-1 p {
+  color: #ffffff;
+  font-family: "Nunito";
+  font-size: 18px;
+}
+.newsletter .newsletter-inner .newsletter-items-1 form {
+  margin-top: 25px;
+}
+.newsletter .newsletter-inner .newsletter-items-1 form input {
+  outline: none;
+  padding: 20px;
+  border-radius: 5px;
+  border: none;
+  margin-right: 15px;
+}
+.newsletter .newsletter-inner .newsletter-items-1 form input::placeholder {
+  font-family: "Nunito";
+  font-size: 18px;
+}
+.newsletter .newsletter-inner .newsletter-items-1 form button {
+  border: none;
+}
+.newsletter .newsletter-inner .newsletter-items-1 form button a {
+  background: linear-gradient(90deg, #4E10FF, #AB17DF);
+  font-family: "Rajdhani";
+  font-size: 18px;
+  color: #ffffff;
+  padding: 15px 25px;
+  font-weight: 600;
+}
+.newsletter .newsletter-inner .newsletter-items-1 form button a i {
+  margin-left: 15px;
+}
+.newsletter .newsletter-inner .newsletter-items-2 {
+  padding-left: 40px;
+}
+.newsletter .newsletter-inner .newsletter-items-2 img {
+  margin-bottom: 30px;
+}
+.newsletter .newsletter-inner .newsletter-items-2 p {
+  color: #ffffff;
+  font-family: "Nunito";
+  font-size: 17px;
+}
+.newsletter .newsletter-inner .newsletter-items-2 ul li {
+  margin-top: 20px;
+}
+.newsletter .newsletter-inner .newsletter-items-2 ul li a {
+  margin-right: 15px;
+  color: #ffffff;
+  font-size: 18px;
+}
+.newsletter .newsletter-inner .newsletter-items-3 {
+  padding-left: 40px;
+}
+.newsletter .newsletter-inner .newsletter-items-3 h3 {
+  font-family: "Rajdhani";
+  color: #ffffff;
+  font-size: 25px;
+  margin-bottom: 25px;
+}
+.newsletter .newsletter-inner .newsletter-items-3 ul li {
+  font-family: "Nunito";
+}
+.newsletter .newsletter-inner .newsletter-items-3 ul li a {
+  font-family: "Nunito";
+  color: #ffffff;
+  font-size: 18px;
+  padding-top: 10px;
+}
+.newsletter .copyright {
+  padding: 30px 0;
+}
+.newsletter .copyright .copyright-items {
+  font-family: "Nunito";
+}
+.newsletter .copyright .copyright-items p {
+  color: rgba(255, 255, 255, 0.6);
+}
+.newsletter .copyright .copyright-items ul li {
+  margin-left: 25px;
+}
+.newsletter .copyright .copyright-items ul li a {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.back-to-top {
+  background-color: #ffffff;
+  color: #AB17DF;
+  padding: 11px 12px;
+  border-radius: 35px;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+}
+
+/*# sourceMappingURL=style.css.map */
